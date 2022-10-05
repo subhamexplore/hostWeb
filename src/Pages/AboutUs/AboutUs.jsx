@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.scss";
-import Group from "../../Assets/Images/Group-7488.png";
+import "./AboutUs.scss";
+import Group from "../../Assets/images/zairza_group.png";
 
 const AboutUs = () => {
   return (

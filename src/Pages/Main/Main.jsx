@@ -9,6 +9,7 @@ import Ellipse1 from "../../Assets/images/Ellipse1.png";
 import lightBox from "../../Assets/images/light-box.png";
 import Vector from "../../Assets/images/Vector2.png";
 import Girls from "../../Assets/images/girls_group.png";
+import Footer from "../../Components/Footer/Footer";
 
 const Main = () => {
   return (
@@ -84,6 +85,7 @@ const Main = () => {
           <img src={Girls} alt="" />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

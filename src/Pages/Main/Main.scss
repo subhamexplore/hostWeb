@@ -1,79 +1,92 @@
-.main{
+.main {
+  .slide-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 3%;
+    height: 100vh;
+  }
+  .slide-1-img {
+    width: 50vw;
+  }
+  .slide-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffeee1;
+    height: 100vh;
+  }
+  .slide-2-img {
+    width: 50vw;
+  }
+  .bot_ellipse_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+
+    .ellipse1 {
+      margin-top: -120px;
+    }
+  }
+  .slide-3 {
+    background-color: #00255c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin-top: 10vh;
+
+    .box_vector_images {
+      width: 58vw;
+      display: flex;
+
+      .vector {
+        width: 50vw;
+        position: relative;
+        left: -410px;
+        top: -200px;
+      }
+      .light-box {
+        width: 52vw;
+      }
+    }
+  }
+  .slide-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+
+    .email-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 350px;
+      .email-input-box {
+        padding: 10px;
+      }
+      .logintext {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+    .email-box p {
+      font-size: small;
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .slide-1 {
+    height: 80vh;
+    padding: 0% 10%;
+  }
+}
+
+@media(max-width:915px){
     .slide-1{
-        display: flex;
-        align-items: center;
-        padding: 10px 5%;
-        height:100vh;
-    }
-    .slide-1-img{
-        width:60vw;
-    }
-    .slide-2{
-        display: flex;
-        align-items: center;
-        background-color: #FFEEE1;
-        height:100vh;
-    }
-    .slide-2-img{
-        width:50vw;
-    }
-    .bot_ellipse_images{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-
-
-        .ellipse1{
-            margin-top:-120px;
-        }
+        gap:1rem;
     }
-    .slide-3{
-        background-color: #00255C;
-        display: flex;
-        align-items:center;
-        height: 100vh;
-        margin-top:10vh;
-
-
-        .box_vector_images{
-            width:58vw;
-            display: flex;
-            
-
-            .vector{
-                width:50vw;
-                position:relative;
-                left:-410px;
-                top:-200px;
-            }
-            .light-box{
-                width:52vw;
-            }
-        }
-    }
-    .slide-4{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding:60px 0px;
-
-        .email-box{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width:350px;
-            .email-input-box{
-                padding: 10px;
-            }
-            .logintext{
-                color:blue;
-                cursor: pointer;
-            }
-        }
-        .email-box p{
-            font-size: small;
-        }
-       
-    }
- 
 }

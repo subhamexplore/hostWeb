@@ -15,9 +15,6 @@ const Footer = () => {
             We will help you with your ideas and turn it into reality
           </div>
         </div>
-		<br />
-		<br />
-		<br />
         <div className="footer-container__left__bottom">
           <p className="footer-container__address">
             OUTR (CET Campus), Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha.+91

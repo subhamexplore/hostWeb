@@ -14,7 +14,7 @@ import Footer from "../../Components/Footer/Footer";
 const Main = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="main">
         <div className="slide-1">
           <HomeSection
@@ -45,7 +45,7 @@ const Main = () => {
             buttonBackground="#1071FF"
           />
           <div className="bot_ellipse_images">
-            <img src={Bot1} alt="" />
+            <img src={Bot1} alt="" className="slide-1-img"/>
             <img src={Ellipse1} alt="" className="ellipse1" />
           </div>
         </div>
@@ -82,7 +82,7 @@ const Main = () => {
             buttonText="Visit team"
             buttonBackground="#1071FF"
           />
-          <img src={Girls} alt="" />
+          <img src={Girls} alt="" className="slide-1-img"/>
         </div>
       </div>
       <Footer />

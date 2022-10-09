@@ -1,7 +1,7 @@
 .footer-container {
 	background-color: #00255c;
 	font-family: "Gilroy-Light";
-	padding:8% 5%;
+	padding:8% 6%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -11,8 +11,7 @@
 	width: 70%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	height: 80%;
+	gap:2rem;
 }
 
 .footer-container__title {
@@ -35,17 +34,84 @@
 .footer-container__right {
 	width: 30%;
 	display: flex;
-	justify-content: space-evenly;
+	gap:1rem;
 }
 
 .footer-container__social_icons {
 	background-color: #003685;
 	border-radius: 24px;
-	padding: 12px;
 	display: flex;
+	padding: 12px;
 }
 
 .footer-container__icons {
 	color: white;
 	cursor: pointer;
 }
+
+@media(max-width:915px){
+	.footer-container{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.footer-container__left{
+		width:fit-content;
+	}
+
+}
+@media(max-width:700px){
+	.footer-container{
+		padding:8%;
+	}
+	.footer-container__left{
+		gap:1rem;
+	}
+	.footer-container__title{
+		font-size:35px;
+	}
+	.footer-container__right{
+	    width:50%; 
+	}
+	.footer-container__social_icons{
+		padding:5px;
+	}
+	.footer-container__icons{
+		font-size:10px;
+	}
+	
+}
+@media(max-width:481px){
+	.footer-container__left{
+		gap:0.1rem;
+	}
+	.footer-container__title{
+		font-size:25px;
+	}
+	.footer-container__description{
+		font-size:10px;
+	}
+	.footer-container__address{
+		font-size:10px;
+	}
+	.footer-container__social_icons{
+		padding:3px;
+	}
+	.footer-container__icons{
+		font-size:2px;
+	}
+}
+@media(max-width:343px){
+	.footer-container__title{
+		font-size:18px;
+	}
+	.footer-container__description{
+		font-size:8px;
+	}
+	.footer-container__address{
+		font-size:8px;
+	}
+}	
+
+
+

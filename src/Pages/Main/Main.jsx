@@ -14,7 +14,7 @@ import Footer from "../../Components/Footer/Footer";
 const Main = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="main">
         <div className="slide-1">
           <HomeSection

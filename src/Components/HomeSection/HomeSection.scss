@@ -1,42 +1,76 @@
-.home-section{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-family: 'Gilroy-Light';
+  max-width: 480px;
+  margin: 1em 0;
+
+  .title {
+    font-size: 50px;
+    font-family: 'Gilroy-Bold';
+    font-weight: 900;
+  }
+
+  .description {
     flex-wrap: wrap;
-    font-family: "Gilroy-Light";
-    width:450px;
+    font-size: small;
+    color: grey;
+    width: 380px;
+  }
 
-    .title{
-        font-size:50px;
-        font-family: "Gilroy-Bold";
-        font-weight: 900;
+  .button {
+    width: fit-content;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    .home-section-btn {
+      border: none;
+      color: white;
+      outline: none;
+      font-size: small;
+      cursor: pointer;
+    }
+    .arrow-icon {
+      font-size: small;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    text-align: center;
+    padding: 0 2em;
+
+    .title {
+      font-size: 42px;
     }
 
-    .description{
-        flex-wrap: wrap;
-        font-size:small;
-        color: grey;
-        width:380px;
+    .description {
+      width: 90%;
+      margin: auto;
     }
 
-    .button{
-        width: fit-content;
-        border-radius:50px;
-        display: flex;
-        align-items: center;
-        color:white;
-        padding:10px 25px;
-        cursor: pointer;
-
-        .home-section-btn{
-            border:none;
-            color:white;
-            outline:none;
-            font-size:small;
-            cursor: pointer;
-        }
-        .arrow-icon{
-            font-size:small;
-        }
+    .button {
+      margin: 0 auto;
     }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .home-section {
+    .title {
+      font-size: 36px;
+    }
+
+    .description {
+      width: 90%;
+      margin: auto;
+    }
+  }
 }

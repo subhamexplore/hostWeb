@@ -1,8 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { instance } from "../../utils/instance";
 
 export const login = createAsyncThunk(
-  `api/login`,
+  "auth/login",
   async ({ userCredentials }) => {
     try {
       const { data } = await instance.post("/api/login", userCredentials);
@@ -15,7 +15,7 @@ export const login = createAsyncThunk(
 );
 
 export const register = createAsyncThunk(
-  `api/register`,
+  "auth/register",
   async ({ userData }) => {
     try {
       const { data } = await instance.post("/api/register", userData);
@@ -26,6 +26,14 @@ export const register = createAsyncThunk(
     }
   }
 );
+
+export const userLogout = createAsyncThunk("auth/logout", async () => {
+  try {
+    localStorage.removeItem("authToken");
+  } catch (error) {
+    return error.response.data.message;
+  }
+});
 
 const initialState = {
   user: null,

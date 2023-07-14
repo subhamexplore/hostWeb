@@ -11,9 +11,6 @@ const Navbar = () => {
         <img src={Logo} alt="" className="logo" style={{width:"100px"}}/>
       </div>
       <div className="navbar__right">
-        <Link to="/about" className="aboutUs-link">
-          About Us
-        </Link>
         <Link to="/blogs" className="aboutUs-link">
           Blogs
         </Link>

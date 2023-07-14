@@ -3,7 +3,6 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../Assets/images/zairza_logo.png";
-import Blogs from "../../Pages/Blogs/Blogs";
 
 const Navbar = () => {
   return (
@@ -12,8 +11,11 @@ const Navbar = () => {
         <img src={Logo} alt="" className="logo" style={{width:"100px"}}/>
       </div>
       <div className="navbar__right">
-        <Link to="/Blogs" className="aboutUs-link">
-          About us
+        <Link to="/about" className="aboutUs-link">
+          About Us
+        </Link>
+        <Link to="/blogs" className="aboutUs-link">
+          Blogs
         </Link>
         <h4 className="navbar__text">Sign In</h4>
         <MenuIcon className="navbar__menu" />

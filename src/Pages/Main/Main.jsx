@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.scss';
-import Navbar from '../../Components/Navbar/Navbar';
 import HomeSection from '../../Components/HomeSection/HomeSection';
 import Home1 from '../../Assets/images/home1.png';
 import groupIcons from '../../Assets/images/groupIcons.png';
@@ -14,7 +13,6 @@ import Footer from '../../Components/Footer/Footer';
 const Main = () => {
   return (
     <>
-      <Navbar />
       <div className='main'>
         <div className='slide-1'>
           <HomeSection

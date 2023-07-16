@@ -2,8 +2,8 @@ import React from 'react'
 import Card from '../../Components/Card/Card';
 import "./BlogDetails.scss";
 import BlogData from '../Blogs/BlogData';
-import Blogs_detail_card from '../../Components/Card/Blogs_detail_card';
-import Blogs_img2 from '../../Assets/images/brando-makes-branding-B0kRAfteJZY-unsplash 1.png';
+import BlogsDetailCard from '../../Components/Card/Blogs_detail_card';
+import BlogsImg2 from '../../Assets/images/brando-makes-branding-B0kRAfteJZY-unsplash 1.png';
 
 const BlogDetails = () => {
   return (
@@ -28,12 +28,12 @@ const BlogDetails = () => {
                     sem tristique. Ut ac ultrices lectus, id volutpat nisi. Aenean ipsum augue, mollis at sodales mollis, varius eu erat. </p>
             </div>
             <div className='blogs-detail-img'>
-                <Blogs_detail_card />
+                <BlogsDetailCard />
             </div>
         </div>
         <div className='blogs-detail-section2'>
             <div className='blogs-detail-img2'>
-                <img src={Blogs_img2} />
+                <img src={BlogsImg2} alt="" />
             </div>
             <div className='blogs-detail-text2'>
                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultrices nec interdum faucibus, pharetra et libero. Vestibulum viverra molestie nunc. Sed quis aliquet leo. In vel posuere tortor. Donec eros turpis, dictum vel vehicula viverra, facilisis in mauris. Nullam rhoncus enim ligula, sit amet suscipit turpis dignissim non. Proin consequat purus sit amet blandit sollicitudin. Aliquam in consequat libero. Morbi sollicitudin dignissim erat laoreet interdum. 

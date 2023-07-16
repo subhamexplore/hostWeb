@@ -3,8 +3,8 @@ import Card from '../../Components/Card/Card';
 import "./ProjectsDetails.scss";
 import ProjectsDetailsData from './ProjectsDetailsData';
 import MenuIcon from '@mui/icons-material/Menu';
-import Blogs_detail_card from '../../Components/Card/Blogs_detail_card';
-import Blogs_img4 from '../../Assets/images/blogs-img-4.png';
+import BlogsDetailCard from '../../Components/Card/Blogs_detail_card';
+import BlogsImg4 from '../../Assets/images/blogs-img-4.png';
 
 
 const ProjectsDetails = () => {
@@ -34,16 +34,16 @@ const ProjectsDetails = () => {
                     <div className='projectsDetails-container'>
                         <div className='projectsDetails-context'>Projects done by</div>
                         <div className='projectsDetails-img'>
-                           <div className='projectsCards'> <Blogs_detail_card /> </div>
-                           <div className='projectsCards'> <Blogs_detail_card /> </div>
-                           <div className='projectsCards'> <Blogs_detail_card /> </div>
-                           <div className='projectsCards'> <Blogs_detail_card /> </div>
+                           <div className='projectsCards'> <BlogsDetailCard /> </div>
+                           <div className='projectsCards'> <BlogsDetailCard /> </div>
+                           <div className='projectsCards'> <BlogsDetailCard /> </div>
+                           <div className='projectsCards'> <BlogsDetailCard /> </div>
                         </div>
                     </div>
                 </div>
                 <div className='projectsDetails-section2'>
                     <div className='projectsDetails-img2'>
-                        <img src={Blogs_img4} />
+                        <img src={BlogsImg4} alt="" />
                     </div>
                     <div className='projectsDetails-text2'>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultrices nec interdum faucibus, pharetra et libero. Vestibulum viverra molestie nunc. Sed quis aliquet leo. In vel posuere tortor. Donec eros turpis, dictum vel vehicula viverra, facilisis in mauris. Nullam rhoncus enim ligula, sit amet suscipit turpis dignissim non. Proin consequat purus sit amet blandit sollicitudin. Aliquam in consequat libero. Morbi sollicitudin dignissim erat laoreet interdum.

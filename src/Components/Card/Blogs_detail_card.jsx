@@ -7,7 +7,7 @@ function Blogs_detail_card() {
     return (
         <div className='detail-card'>
             <div className='detail-img'>
-                <img src={detail_img} />
+                <img src={detail_img} alt="" />
             </div>
             <div className='detail-content'>
                 <div className='detail-text'>

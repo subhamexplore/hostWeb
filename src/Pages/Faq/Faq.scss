@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../../Assets/fonts/Gilroy-ExtraBold.woff)
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: lighter;
+    src: url(../../Assets/fonts/Gilroy-Light.woff)
+  }
+.faq-section{
+    overflow-x: hidden;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  .logo {
+    height: 30px;
+    width: 110px;
+    margin-left: 100px;
+  }
+  .burger {
+    height: 40px;
+    width: 40px;
+    margin-right: 100px;
+  }
+}
+.heading{
+    margin-left: 100px;
+    font-size: 40px;
+    margin-top: 70px;
+    font-family: Gilroy;
+}
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .faq_left{
+        width: 600px;
+        border: 1.2px solid rgb(181, 181, 181);
+        border-radius: 5px;
+        .accordian{
+            border-bottom: 1px solid black;
+            .acc-heading{
+                font-family: Gilroy;
+                font-weight: 600;
+            }
+            .acc-desc{
+                font-family: Gilroy;
+            }
+        }
+    }
+    .faq_right{
+        width: 600px;
+    }
+}
+@media(max-width: 1316px){
+    .faq{      
+        .faq_left{
+            margin-left: 3rem;
+        }
+    }
+}
+@media(max-width: 696px){
+    .heading{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .top{
+        .logo{
+            margin-left: 40px;
+        }
+        .burger{
+            margin-right: 40px;
+        }
+    }
+    .faq{ 
+        margin-top: 30px;
+        flex-direction: column;   
+        .faq_left{
+            margin-left: 0rem;
+        }
+        .faq_right{
+            margin-top: 30px;
+        }
+    }
+}
+@media(max-width: 663px){
+    .faq{ 
+        margin-top: 30px;
+        .faq_left{
+            width: 300px;
+        }
+        .faq_right{
+            width: 400px;
+            margin-left: 20px;
+        }
+    }
+}
+

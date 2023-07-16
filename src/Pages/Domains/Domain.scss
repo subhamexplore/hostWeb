@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../../Assets/fonts/Gilroy-ExtraBold.woff)
+}
+.Domain-section{
+    overflow-x: hidden;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    .logo {
+      height: 30px;
+      width: 110px;
+      margin-left: 100px;
+    }
+    .burger {
+      height: 40px;
+      width: 40px;
+      margin-right: 100px;
+    }
+}
+.heading{
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: Gilroy;
+}
+.domains{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 23px;
+    margin-bottom: 50px;
+    .domain{
+        margin: auto;
+        font-family: Gilroy;
+        font-size: 19.5px;
+        letter-spacing: 1px;
+    }
+}
+
+@media(max-width: 1486px){
+    .domains{
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 30px;
+        .domain{
+            margin: auto;
+        }
+    }
+}
+@media(max-width: 1089px){
+    .heading{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .domains{
+        grid-template-columns: auto auto;
+        grid-row-gap: 30px;
+        .domain{
+            margin: auto;
+        }
+    }
+}
+@media(max-width: 740px){
+    .heading{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .domains{
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+        .domain{
+            margin: auto;
+        }
+    }
+}
+
+@media(max-width: 696px){
+    .heading{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .top{
+        .logo{
+            margin-left: 40px;
+        }
+        .burger{
+            margin-right: 40px;
+        }
+    }
+}

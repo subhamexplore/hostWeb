@@ -8,7 +8,7 @@ import ProjectsDetails from './Pages/ProjectsDetails/ProjectsDetails';
 import Achievements from "./Pages/Achievements/Achievement";
 import Faq from "./Pages/Faq/Faq";
 import Domains from "./Pages/Domains/Domain";
-
+import Events from "./Pages/Events/Events";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Route path="/achievements" element={<Achievements />} />
         <Route path="/faq" element={<Faq/>} />
         <Route path="/domains" element={<Domains />} />
+        <Route path="/events" element={<Events/>} />
       </Routes>
     </div>
   );

@@ -11,12 +11,18 @@ const Navbar = () => {
         <img src={Logo} alt="" className="logo" style={{width:"100px"}}/>
       </div>
       <div className="navbar__right">
-        <Link to="/about" className="aboutUs-link">
-          About Us
-        </Link>
         <Link to="/blogs" className="aboutUs-link">
           Blogs
         </Link>
+        <Link to="/blog-details" className="aboutUs-link">
+          BlogDetails
+        </Link>
+        <Link to="/projects" className="aboutUs-link">
+        Projects
+      </Link>
+      <Link to="/projectsDetails" className="aboutUs-link">
+        ProjectsDetails
+      </Link>
         <h4 className="navbar__text">Sign In</h4>
         <MenuIcon className="navbar__menu" />
       </div>

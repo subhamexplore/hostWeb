@@ -12,10 +12,7 @@ import faq_img from "../../Assets/images/faq.png"
 const Faq = () => {
   return (
     <div className="faq-section">
-      <div className="top">
-        <img src={Logo} alt="" className="logo" />
-        <img src={menu} alt="" className="burger" />
-      </div>
+      
 
       <h1 className="heading">FAQs</h1>
       

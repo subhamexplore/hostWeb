@@ -9,10 +9,14 @@ import Achievements from "./Pages/Achievements/Achievement";
 import Faq from "./Pages/Faq/Faq";
 import Domains from "./Pages/Domains/Domain";
 import Events from "./Pages/Events/Events";
+import Eventudp from "./Pages/Eventudp/Eventudp";
+import Navbar from './Components/Navbar/Navbar';
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/blogs" element={<Blogs/>} />
@@ -23,7 +27,9 @@ function App() {
         <Route path="/faq" element={<Faq/>} />
         <Route path="/domains" element={<Domains />} />
         <Route path="/events" element={<Events/>} />
+        <Route path="/eventudp" element={< Eventudp/>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

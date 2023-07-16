@@ -42,12 +42,15 @@ const Navbar = () => {
     <div className={animate===0?"navbar_content":"navbar_content_close"}>
       <div className="close_icon"><CloseIcon className="navbar__menu" onClick={close}/></div>
       <div className="nav-content-container">
-      <div className="nav-button-content">Home</div>
-      <div className="nav-button-content">Projects</div>
-      <div className="nav-button-content">Events</div>
-      <Link to="/blogs" className="aboutUs-link"><div className="nav-button-content">Blogs</div></Link>
-      <div className="nav-button-content">Members</div>
-      <Link to="/about" className="aboutUs-link"><div className="nav-button-content">About Us</div></Link>
+      <Link to="/" className="aboutUs-link" onClick={close}><div className="nav-button-content">Home</div></Link>
+      <Link to="/projects" className="aboutUs-link" onClick={close}><div className="nav-button-content">Projects</div></Link>
+      <Link to="/events" className="aboutUs-link" onClick={close}><div className="nav-button-content">Events</div></Link>
+      <Link to="/blogs" className="aboutUs-link" onClick={close}><div className="nav-button-content">Blogs</div></Link>
+      <Link to="/" className="aboutUs-link" onClick={close}><div className="nav-button-content">Members</div></Link>
+      <Link to="/about" className="aboutUs-link" onClick={close}><div className="nav-button-content">About Us</div></Link>
+      <Link to="/achievements" className="aboutUs-link" onClick={close}><div className="nav-button-content">Achievements</div></Link>
+      <Link to="/domains" className="aboutUs-link" onClick={close}><div className="nav-button-content">Domains</div></Link>
+      <Link to="/faq" className="aboutUs-link" onClick={close}><div className="nav-button-content">Faq</div></Link>
       <div className="nav-button-content">Log In/Sign Up</div>
       <div className="footer-container_down">
         <div className="footer-container__social_icons">

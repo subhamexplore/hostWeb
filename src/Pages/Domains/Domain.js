@@ -94,10 +94,7 @@ const Domain = () => {
 
   return (
     <div className="Domain-section">
-      <div className="top">
-        <img src={Logo} alt="" className="logo" />
-        <img src={menu} alt="" className="burger" />
-      </div>
+      
 
       <h1 className="heading">
         Domains we cover

@@ -5,21 +5,7 @@
 .Domain-section{
     overflow-x: hidden;
 }
-.top {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
-    .logo {
-      height: 30px;
-      width: 110px;
-      margin-left: 100px;
-    }
-    .burger {
-      height: 40px;
-      width: 40px;
-      margin-right: 100px;
-    }
-}
+
 .heading{
     margin-left: 100px;
     margin-top: 30px;
@@ -82,12 +68,5 @@
         margin-left: 0px;
         text-align: center;
     }
-    .top{
-        .logo{
-            margin-left: 40px;
-        }
-        .burger{
-            margin-right: 40px;
-        }
-    }
+    
 }

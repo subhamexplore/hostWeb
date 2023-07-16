@@ -1,3 +1,5 @@
+
+
 .events{
     padding: 0;
     margin: 0;
@@ -11,10 +13,11 @@
     height: 15.5rem;
     width:100%;
     object-fit: cover;
+    background-size: cover;
     // z-index: 1;
   }
    .events-text{
-    position: absolute;
+    position: relative;
     top: 4rem;
     left: 6rem;
     color: rgba(255, 255, 255, 1);

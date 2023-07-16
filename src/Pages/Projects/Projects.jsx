@@ -3,7 +3,6 @@ import Card from '../../Components/Card/Card';
 import "./Projects.scss"
 import {FaSearch} from "react-icons/fa";
 import ProjectsData from './ProjectsData';
-import MenuIcon from '@mui/icons-material/Menu';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 
@@ -12,9 +11,6 @@ function Projects(){
     return(
         <div className='projects'>
             <div className='projects-header'>
-            <div className='menuicon'>
-            <MenuIcon></MenuIcon>
-            </div>
             <div className='projects-text'>Projects</div>
             </div>
             <div className='projects-mid'>

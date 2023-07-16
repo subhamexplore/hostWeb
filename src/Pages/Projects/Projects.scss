@@ -9,18 +9,14 @@
     padding: 0;
     margin:auto;
     left: 0;
-    background-repeat: n0-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 243px;
     width:100%;
     min-width:1366px;
     position: relative;
     background-position: 30%;
     z-index: 1;
-  }
-  .menuicon{
-    position: absolute;
-    margin-top: 3rem;
-    right: 6rem;
   }
    .projects-text{
     position: absolute;

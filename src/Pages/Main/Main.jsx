@@ -3,11 +3,12 @@ import './Main.scss';
 import HomeSection from '../../Components/HomeSection/HomeSection';
 import Home1 from '../../Assets/images/home1.png';
 import groupIcons from '../../Assets/images/groupIcons.png';
-import Achieve from '../../Assets/images/achievement.png';
+import Achieve from '../../Assets/images/achievement_slide_img.png';
 import Ellipse1 from '../../Assets/images/Ellipse1.png';
 import Resource from '../../Assets/images/resource.png';
 import Girls from '../../Assets/images/girls_group.png';
-import Footer from '../../Components/Footer/Footer';
+
+
 
 const Main = () => {
   return (
@@ -84,7 +85,6 @@ const Main = () => {
           <img src={Girls} alt='' className='slide-1-img' />
         </div>
       </div>
-      <Footer />
     </>
   );
 };

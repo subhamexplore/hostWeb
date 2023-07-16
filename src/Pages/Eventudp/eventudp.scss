@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Gilroy;
+    font-weight: lighter;
+    src: url('../../Assets/fonts/Gilroy-Light.otf');
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url('../../Assets/fonts/Gilroy-ExtraBold.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.eudp {
+    overflow-y: scroll;
+    font-family: Gilroy, sans-serif;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .eudp_top {
+        width: 100vw;
+        height: 15rem;
+        background: url("../../Assets/images/upcoming_event_title.png");
+        background-size: cover;
+        background-position: bottom;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+
+        .eudp_titles {
+            margin: auto;
+            margin-left: 3rem;
+
+            .event_title {
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+
+            .date_time {
+                display: flex;
+                gap: 10px;
+
+                .eudp_dot {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .eudp_mid {
+        width: 80vw;
+        margin: auto;
+        margin-top: 2rem;
+        position: relative;
+        margin-bottom: 2rem;
+
+        .abtEvent {
+            .eveDesc {
+                color: #344054;
+                margin: 1rem 0;
+            }
+
+            .dateTimeVenue {
+                margin-bottom: 1rem;
+                font-weight: 400;
+
+                .dt {
+                    color: #475467;
+                }
+            }
+
+            .preLink {
+                color: #1071FF;
+
+                a:visited {
+                    color: #1071FF;
+                }
+            }
+        }
+
+        .organisers {
+            margin: 2rem 0;
+            height: max-content;
+
+            .orgdiv {
+                margin-top: 1rem;
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                .orgbox {
+                    // width: 10rem;
+                    width: 160px;
+
+                    .orgimg {
+                        border: none;
+                        border-radius: 10px;
+                    }
+
+                    .name {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #101828;
+                    }
+
+                    .domain {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #101828;
+                    }
+                }
+            }
+        }
+
+        .regibtn {
+            .eudpRegBtn {
+                -webkit-border-radius: 24;
+                -moz-border-radius: 24;
+                border: none;
+                border-radius: 24px;
+                font-family: Arial;
+                color: #ffffff;
+                font-size: 16px;
+                background: #1071FF;
+                padding: 12px 32px 12px 32px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .orgdiv {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .orgimg {
+        width: 250px;
+        margin-left: -2.65rem;
+    }
+
+    .regibtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .orgheading {
+        text-align: center;
+    }
+}

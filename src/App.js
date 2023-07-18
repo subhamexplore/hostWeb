@@ -14,7 +14,6 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from "./Components/Footer/Footer";
 
 
-
 function App() {
   return (
     <div className="App">
@@ -22,7 +21,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/blogs" element={<Blogs/>} />
-      
         <Route path="/blog-details" element={<BlogDetails/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/projectsDetails" element={<ProjectsDetails/>}/>
@@ -31,6 +29,7 @@ function App() {
         <Route path="/domains" element={<Domains />} />
         <Route path="/events" element={<Events/>} />
         <Route path="/eventudp" element={< Eventudp/>} />
+
       </Routes>
       <Footer />
     </div>

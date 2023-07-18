@@ -15,13 +15,14 @@ const Navbar = () => {
     setAnimate(1);
     setTimeout(()=>setShowNav(true),300);
   }
+
   return (<>
     {
       showNav===true ? (
         <div className="main_navbar">
           <div className="sub_nav">
       <div className="navbar">
-      <div className="navbar__left">
+      <div className="navbar__left" >
         <img src={Logo} alt="" className="logo" style={{width:"100px"}}/>
       </div>
       <div className="navbar__right">
@@ -36,7 +37,7 @@ const Navbar = () => {
       <div className="sub_nav">
       <div className="navbar">
       <div className="navbar__left">
-        <img src={Logo} alt="" className="logo" style={{width:"100px"}}/>
+        <img src={Logo} alt="" className="navabar__logo" style={{width:"100px"}} />
       </div>
     </div>
     <div className={animate===0?"navbar_content":"navbar_content_close"}>

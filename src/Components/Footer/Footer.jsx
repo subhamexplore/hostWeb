@@ -25,9 +25,9 @@ const Footer = () => {
         </div>
         <div className="footer-container__right__bottom">
           <div className="footer-container__address">
-          <div className="footer_address"><EmailIcon className="footer-address__icons" /><span className="footer_address_content">OUTR (CET Campus), Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha</span></div>
+          <div className="footer_address"><EmailIcon className="footer-address__icons" /><span className="footer_address_content">cet.sac.zairza@gmail.com</span></div>
           <div className="footer_address"><PhoneIcon className="footer-address__icons" /><span className="footer_address_content">+91 7205883336</span></div>
-          <div className="footer_address"><LocationOnIcon className="footer-address__icons" /><span className="footer_address_content">cet.sac.zairza@gmail.com</span></div>
+          <div className="footer_address"><LocationOnIcon className="footer-address__icons" /><span className="footer_address_content">OUTR (CET Campus), Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha</span></div>
           </div>
         </div>
       </div>

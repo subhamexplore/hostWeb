@@ -69,4 +69,7 @@ p{
     .collage img{
         margin-bottom: 1.2rem;
     }
+    img{
+        height:20rem;
+    }
 }

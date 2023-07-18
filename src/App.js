@@ -14,7 +14,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from "./Components/Footer/Footer";
 import Teams from "./Pages/Teams/Team";
 import Alumni from "./Pages/Alumni/Alumni";
-
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -34,6 +34,8 @@ function App() {
 
         <Route path="/teams" element={<Teams/>} />
         <Route path="/alumni" element={<Alumni/>} />
+
+        <Route path="/about" element={<AboutUs/>} />
       </Routes>
       <Footer />
     </div>

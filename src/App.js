@@ -12,6 +12,8 @@ import Events from "./Pages/Events/Events";
 import Eventudp from "./Pages/Eventudp/Eventudp";
 import Navbar from './Components/Navbar/Navbar';
 import Footer from "./Components/Footer/Footer";
+import Teams from "./Pages/Teams/Team";
+import Alumni from "./Pages/Alumni/Alumni";
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path="/events" element={<Events/>} />
         <Route path="/eventudp" element={< Eventudp/>} />
 
+        <Route path="/teams" element={<Teams/>} />
+        <Route path="/alumni" element={<Alumni/>} />
       </Routes>
       <Footer />
     </div>

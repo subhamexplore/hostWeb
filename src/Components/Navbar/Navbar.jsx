@@ -52,18 +52,18 @@ const Navbar = () => {
       <Link to="/domains" className="aboutUs-link" onClick={close}><div className="nav-button-content">Domains</div></Link>
       <Link to="/faq" className="aboutUs-link" onClick={close}><div className="nav-button-content">Faq</div></Link>
       <div className="nav-button-content">Log In/Sign Up</div>
-      <div className="footer-container_down">
-        <div className="footer-container__social_icons">
-          <TwitterIcon className="footer-container__icons" />
+      <div className="navbar-container_down">
+        <div className="navbar-container__social_icons">
+          <TwitterIcon className="navbar-container__icons" />
         </div>
-        <div className="footer-container__social_icons">
-          <MailOutlineIcon className="footer-container__icons" />
+        <div className="navbar-container__social_icons">
+          <MailOutlineIcon className="navbar-container__icons" />
         </div>
-        <div className="footer-container__social_icons">
-          <InstagramIcon className="footer-container__icons" />
+        <div className="navbar-container__social_icons">
+          <InstagramIcon className="navbar-container__icons" />
         </div>
-        <div className="footer-container__social_icons">
-          <GitHubIcon className="footer-container__icons" />
+        <div className="navbar-container__social_icons">
+          <GitHubIcon className="navbar-container__icons" />
         </div>
       </div>
       </div>

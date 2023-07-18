@@ -12,19 +12,19 @@ const HomeSection = ({
   return (
     <div className='home-section'>
       {title && (
-        <div className='title' style={{ color: titleColor }}>
+        <div className='title' style={{ color: titleColor}}>
           {title}
         </div>
       )}
       {description && <div className='description'>{description}</div>}
-      <div className='button' style={{ backgroundColor: buttonBackground }}>
+      <div className='button' style={{ backgroundColor: buttonBackground,height:"2.5rem"}}>
         <button
           className='home-section-btn'
-          style={{ backgroundColor: buttonBackground }}
+          style={{ backgroundColor: buttonBackground ,fontSize:"1.1rem"}}
         >
           {buttonText}
         </button>
-        <ArrowForwardIcon className='arrow-icon' />
+        <ArrowForwardIcon className='arrow-icon'style={{fontSize:"1.3rem"}} />
       </div>
     </div>
   );

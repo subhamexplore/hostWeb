@@ -1,0 +1,430 @@
+.projects{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+  }
+  .projects-header{
+    background-image: url("../../Assets/images/Rectangle\ 11.png");
+    padding: 0;
+    margin:auto;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 243px;
+    width:100%;
+    min-width:1366px;
+    position: relative;
+    background-position: 30%;
+    z-index: 1;
+  }
+   .projects-text{
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: .2rem;
+    z-index: -1;
+  }
+  .projects-mid{
+    display: flex;
+    flex-direction: row;
+  }
+  .search-projects {
+    position: relative;
+    height: 3.5rem;
+    max-width: 60rem;
+    width: 50rem;
+    background:rgba(255, 255, 255, 1);
+    margin-top: 3rem;
+    margin-left: 3rem;
+    left: 2rem;
+    border-radius: .2rem;
+    border:1px solid rgba(152, 162, 179, 1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  .projects-filter{
+   display: flex;
+   position: relative;
+   flex-direction: row;
+   margin-left: 18rem;
+   margin-top: 5rem;
+ }
+  .search-projects .search-icon,
+  .search-projects .search-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .search-projects .search-icon {
+    margin: 2px;
+    left: 20px;
+    font-size: 20px;
+    color: #767373;
+  }
+  .search-projects .search-bar {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+  .search-projects .search-button {
+    height: 2.5rem;
+    width: 6rem;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: rgba(16, 113, 255, 1);
+    cursor: pointer;
+  }
+  .search-projects .search-button:active {
+    transform: translateY(-50%) scale(0.98);
+  }
+ 
+  .blog-card{
+    margin-top: 2rem;
+    height: 14rem;
+    width: 22rem;
+    background-color: rgba(255, 255, 255, 1);
+    border: 8px ;
+    margin-left: 3rem;
+    border-radius:.7rem;
+    box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  }
+  .card-img img{
+    height:10rem;
+    width: 22rem;
+  }
+  .card-title h2{
+    font-size: 1.1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 0rem;
+  }
+  .card-desc p{
+    top: .3rem;
+    font-size: .6rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-left: 1%;
+    margin-bottom: 3rem;
+  }
+  
+  /* Responsive */
+  
+  @media screen and (max-width:400px) {
+    .search-projects{
+      margin-left: 2rem;
+      margin-top: 4rem;
+    }
+  }
+  @media screen and (max-width:1400px){
+    .blog-card{
+      margin-top: 3rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .projects-header{
+      min-width: 1200px;
+    }
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 20rem;
+        margin-right: 0rem;
+        margin-top: 5rem;
+    }
+  }
+  @media screen and (max-width:1200px) {
+    .cardContainer{
+      margin-left: 7rem;
+    }
+    .projects-header{
+        min-width: 1312px;
+    }
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 21rem;
+        margin-right: -10rem;
+        margin-top: 5rem;
+    }
+  }
+  @media screen and (max-width:1000px){
+    .blog-card{
+      margin-top: 3rem;
+      margin-left: 12rem;
+      align-items: center;
+      justify-content: center;
+      height: 21rem;
+      width: 27rem;
+    }
+    .projects-header{
+      height: 15rem;
+    }
+    .projects-header .blog-text{
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+    .projects-header .blog-text1{
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+    .cardContainer{
+        margin-left: 7rem;
+    }
+    .card-img img{
+      height: 14rem;
+      width: 27rem;
+    }
+    .card-title h2{
+      margin: .9rem;
+      font-size: 1.5rem;
+    }
+    .card-desc p{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: .9rem;
+    }
+    .search-projects{
+      height: 66px;
+    margin-left: 6rem;
+      width: 50rem;
+      margin-top: 5rem;
+    }
+    .search-projects .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-projects .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-projects .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 17rem;
+        margin-right: -15rem;
+        margin-top: 8rem;
+    }
+  }
+  @media screen and (max-width:960px) {
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 18rem;
+        margin-right: -24rem;
+        margin-top: 8rem;
+    }
+  }
+  @media screen and (max-width:840px) {
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 18rem;
+        margin-right: -30rem;
+        margin-top: 8rem;
+    }
+  }
+  @media screen and (max-width:600px){
+    .blog-card{
+      margin-top: 2rem;
+      margin-left: 5rem;
+      align-items: center;
+      justify-content: center;
+      width: 34rem;
+      height:25rem;
+    }
+    .card-img img{
+      height: 16rem;
+      width: 34rem;
+    }
+    .card-title h2{
+      margin-top: 2rem;
+      font-size: 1.7rem;
+    }
+    .card-desc p{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+    .projects-header{
+      max-width: 800px;
+    }
+    .cardContainer{
+      margin-top: -1.5rem;
+      margin-right: 10rem;
+    }
+    .search-projects{
+      height: 66px;
+    margin-left: 8rem;
+      width: 60rem;
+      margin-top: 6rem;
+    }
+    .search-projects .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-projects .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-projects .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 19rem;
+        margin-right: -36rem;
+        margin-top: 8rem;
+    }
+  }
+  @media screen and (max-width:700px){
+    .blog-card {
+        margin-top: 4rem;
+        margin-left: 15rem;
+        align-items: center;
+        justify-content: center;
+        height: 26rem;
+        width: 34rem;
+    }
+    .card-img img{
+        height: 16rem;
+        width: 34rem;
+      }
+      .card-title h2{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+      }
+      .card-desc p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.1rem;
+      }
+    .search-blog{
+      margin:3rem
+    }
+    .projects-header{
+      min-width: 1348px;
+    }
+    .cardContainer{
+      margin-left: 5rem;
+      margin-top: 1.5rem;
+    }
+    .search-projects{
+      height: 66px;
+    margin-left: 6rem;
+      width: 50rem;
+    }
+    .search-projects .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-projects .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-projects .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 19rem;
+        margin-right: -36rem;
+        margin-top: 8rem;
+    }
+  }
+  
+  @media screen and (max-width:450px){
+    .blog-card{
+      margin-top: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin-left:2rem ;
+      width: 34rem;
+      height:25rem;
+    }
+    .projects-filter {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-left: 18rem;
+        margin-right: -52rem;
+        margin-top: 5rem;
+    }
+    .projects-header{
+      max-width: 50px;
+      margin-bottom: 4rem;
+    }
+    .card-img img{
+      height: 16rem;
+      width: 34rem;
+    }
+    .card-title h2{
+      margin-top: 2rem;
+      font-size: 1.7rem;
+    }
+    .card-desc p{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+    .cardContainer{
+      margin-top: -1.7rem;
+      margin-left: 18rem;
+    }
+    .search-projects {
+        height: 66px;
+        margin-left: 6rem;
+        width: 50rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .search-projects .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-projects .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-projects .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }

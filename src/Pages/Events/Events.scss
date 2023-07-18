@@ -1,0 +1,422 @@
+
+
+.events{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    font-family:'Gilroy-Light';
+  }
+  .events-header{
+    background-image: url("../../Assets/images/event_img.png");
+    background-repeat: no-repeat;
+    height: 15.5rem;
+    width:100%;
+    object-fit: cover;
+    background-size: cover;
+    // z-index: 1;
+  }
+   .events-text{
+    position: relative;
+    top: 4rem;
+    left: 6rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    // line-height: 20px;
+    letter-spacing: .2rem;
+    z-index: 1;
+  }
+  .search-blog {
+    position: relative;
+    height: 3.5rem;
+    max-width: 50rem;
+    background:rgba(255, 255, 255, 1);
+    margin-top: 3rem;
+    margin-left: 4.3rem;
+    left: 2rem;
+    border-radius: .2rem;
+    border:1px solid rgba(152, 162, 179, 1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  .search-blog .search-icon,
+  .search-blog .search-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .search-blog .search-icon {
+    margin: 2px;
+    left: 20px;
+    font-size: 20px;
+    color: #767373;
+  }
+  .search-blog .search-bar {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+  .search-blog .search-button {
+    height: 2.5rem;
+    width: 6rem;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: rgba(16, 113, 255, 1);
+    cursor: pointer;
+  }
+  .search-blog .search-button:active {
+    transform: translateY(-50%) scale(0.98);
+  }
+  // .card{
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   margin-top: 1rem;
+  // }
+  .blog-card{
+    margin-top: 2rem;
+    height: 14rem;
+    width: 22rem;
+    background-color: rgba(255, 255, 255, 1);
+    border: 8px ;
+    margin-left: 3rem;
+    border-radius:.7rem;
+    box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  }
+  .card-img img{
+    height:10rem;
+    width: 22rem;
+  }
+  .card-title h2{
+    font-size: 1.1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 0rem;
+  }
+  .card-desc p{
+    top: .3rem;
+    font-size: .6rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.6rem;
+    margin-left: 4%;
+  }
+
+  .eventHeading1{
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+    color: rgb(14, 1, 1);
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: Gilroy;
+    
+  }
+  .eventHeading2{
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+    color: rgb(14, 1, 1);
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: Gilroy;
+  }
+  
+  /* Responsive */
+  
+  @media screen and (max-width:400px) {
+    .search-blog{
+      margin-left: 2rem;
+      margin-top: 4rem;
+    }
+  }
+  @media screen and (max-width:1400px){
+    .blog-card{
+      margin-top: 3rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .events-header{
+      min-width: 1100px;
+    }
+  }
+  @media screen and (max-width:1200px) {
+    .cardContainer{
+      padding-left: 5rem;
+    }
+    
+  }
+  @media screen and (max-width:968px){
+    .blog-card{
+      margin-top: 3rem;
+      margin-left: 12rem;
+      align-items: center;
+      justify-content: center;
+      height: 21rem;
+      width: 27rem;
+    }
+    .events-header{
+      height: 18rem;
+    }
+    .events-header .events-text{
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+    .events-header .events-text1{
+      margin-top: 4rem;
+      font-size: 3rem;
+    }
+    .search-blog{
+      margin-top: 5rem;
+    }
+    .card-img img{
+      height: 14rem;
+      width: 27rem;
+    }
+    .card-title h2{
+      margin: .9rem;
+      font-size: 1.5rem;
+    }
+    .card-desc p{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: .9rem;
+    }
+    .search-blog{
+      height: 66px;
+    margin-left: 6rem;
+      width: 50rem;
+    }
+    .search-blog .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-blog .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-blog .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+
+    .eventHeading1{
+      margin-top: 3rem;
+      margin-left: 25rem;
+      color: rgb(14, 1, 1);
+      font-size: 1.8rem;
+      font-weight: 700;
+      width:250px;
+      font-family: Gilroy;
+      // text-align: center;
+    }
+    .eventHeading2{
+      margin-top: 3rem;
+      margin-left: 27rem;
+      color: rgb(14, 1, 1);
+      font-size: 1.8rem;
+      font-weight: 700;
+      width:250px;
+      font-family: Gilroy;
+      // text-align: center;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .blog-card{
+      margin-top: 2rem;
+      margin-left: 5rem;
+      align-items: center;
+      justify-content: center;
+      width: 34rem;
+      height:25rem;
+    }
+    .card-img img{
+      height: 16rem;
+      width: 34rem;
+    }
+    .card-title h2{
+      margin-top: 2rem;
+      font-size: 1.7rem;
+    }
+    .card-desc p{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+    .search-blog{
+      margin:3rem
+    }
+    .events-header{
+      max-width: 800px;
+    }
+    .cardContainer{
+      margin-top: -1.5rem;
+      margin-right: 10rem;
+    }
+    .search-blog{
+      height: 66px;
+    margin-left: 6rem;
+      width: 50rem;
+    }
+    .search-blog .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-blog .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-blog .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+
+    .eventHeading1{
+      margin-top: 3rem;
+      margin-left: 28rem;
+      color: rgb(14, 1, 1);
+      font-size: 1.8rem;
+      font-weight: 700;
+      width:250px;
+      font-family: Gilroy;
+      // text-align: center;
+    }
+    .eventHeading2{
+      margin-top: 3rem;
+      margin-left: 30rem;
+      color: rgb(14, 1, 1);
+      font-size: 1.8rem;
+      font-weight: 700;
+      width:250px;
+      font-family: Gilroy;
+      // text-align: center;
+    }
+  }
+  @media screen and (max-width:768px){
+    .blog-card{
+      margin-top: 2rem;
+      margin-left: 5rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-blog{
+      margin:3rem
+    }
+    .events-header{
+      max-width: 200px;
+    }
+    .cardContainer{
+      margin-left: 9rem;
+      margin-top: 1.5rem;
+    }
+    .search-blog{
+      height: 66px;
+    margin-left: 6rem;
+      width: 50rem;
+    }
+    .search-blog .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-blog .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-blog .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+  @media screen and (max-width:450px){
+    .cardContainer{
+      width:50rem;
+    }
+    .blog-card{
+      margin-top: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin-left:2rem ;
+      width: 34rem;
+      height:25rem;
+    }
+    
+    .events-header{
+      max-width: 50px;
+      margin-bottom: 4rem;
+    }
+    .card-img img{
+      height: 16rem;
+      width: 34rem;
+    }
+    .card-title h2{
+      margin-top: 2rem;
+      font-size: 1.7rem;
+    }
+    .card-desc p{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+    .cardContainer{
+      margin-top: -.5rem;
+    }
+    .search-blog{
+      height: 66px;
+    margin-left: 6rem;
+      width: 50rem;
+    }
+    .search-blog .search-icon{
+      left: 12px;
+      font-size: 25px;
+    }
+    .search-blog .search-bar {
+      padding: 0 112px 0 50px;
+    }
+    .search-blog .search-button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+
+    .eventHeading1{
+      margin-top: 3rem;
+      margin-left: 25rem;
+      color: rgb(14, 1, 1);
+      font-size: 1.8rem;
+      font-weight: 700;
+      width:250px;
+      font-family: Gilroy;
+      // text-align: center;
+    }
+    .eventHeading2{
+      margin-top: 3rem;
+      margin-left: 27rem;
+      color: rgb(14, 1, 1);
+      font-size: 1.8rem;
+      font-weight: 700;
+      width:250px;
+      font-family: Gilroy;
+      // text-align: center;
+    }
+  }
+  
+  
+  
+  

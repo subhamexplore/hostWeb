@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="sub_nav">
       <div className="navbar">
       <div className="navbar__left" >
-        <img src={Logo} alt="" className="logo" style={{width:"100px"}}/>
+        <Link to="/" onClick={close}><img src={Logo} alt="" className="logo" style={{width:"100px"}}/></Link>
       </div>
       <div className="navbar__right">
         <h4 className="navbar__text">Sign In</h4>
@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="sub_nav">
       <div className="navbar">
       <div className="navbar__left">
-        <img src={Logo} alt="" className="navabar__logo" style={{width:"100px"}} />
+      <Link to="/" onClick={close}><img src={Logo} alt="" className="logo" style={{width:"100px"}}/></Link>
       </div>
     </div>
     <div className={animate===0?"navbar_content":"navbar_content_close"}>

@@ -1,15 +1,4 @@
 
-
-
-
-.icon{
-    
-    text-align: right;
-    justify-content: right;
-    margin-top: 50px;
-    margin-right: 40px;
-    font-size:30px;
-}
 .upperleft{
     text-transform: capitalize;
     font-size: 42px;
@@ -64,23 +53,7 @@
     /* margin-bottom: 78pc; */
     top:17pc;
 }
-/* .des{
-     background-color: navy;
-     width:150px;
-}
-.des h4{
-    text-transform: capitalize;
-    font-size: large;
-    margin-bottom: 2px;
 
-}
-.des h6{
-    text-transform: capitalize;
-    font-size: medium;
-  
-
-
-} */
 .icon1{
    width:20%;
 }
@@ -259,3 +232,4 @@
 
 }
 }
+

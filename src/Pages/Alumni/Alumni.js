@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Alumni.css"
-import { FaAlignJustify } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 
 
@@ -9,9 +8,6 @@ const Alumni = () => {
 
         <div className="container">
 
-            <div className='icon'>
-                <FaAlignJustify />
-            </div>
             <div className="upper">
                 <div className="upperleft">
                     <h1>lets meet our alumnis</h1>

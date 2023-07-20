@@ -19,7 +19,7 @@ const Navbar = () => {
   return (<>
     {
       showNav===true ? (
-        <div className="main_navbar">
+        <div className="main_navbar" >
           <div className="sub_nav">
       <div className="navbar">
       <div className="navbar__left" >
@@ -33,7 +33,7 @@ const Navbar = () => {
     </div>
     </div>
       ):(
-    <div className="main_navbar">
+    <div className="main_navbar" onClick={close}>
       <div className="sub_nav">
       <div className="navbar">
       <div className="navbar__left">

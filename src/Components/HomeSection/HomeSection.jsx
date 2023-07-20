@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomeSection.scss';
+import { Link } from "react-router-dom";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const HomeSection = ({
@@ -8,6 +9,7 @@ const HomeSection = ({
   description,
   buttonText,
   buttonBackground,
+  buttonLink
 }) => {
   return (
     <div className='home-section'>
@@ -18,12 +20,12 @@ const HomeSection = ({
       )}
       {description && <div className='description'>{description}</div>}
       <div className='button' style={{ backgroundColor: buttonBackground,height:"2.5rem"}}>
-        <button
+        <Link to={buttonLink}><button
           className='home-section-btn'
           style={{ backgroundColor: buttonBackground ,fontSize:"1.1rem"}}
         >
           {buttonText}
-        </button>
+        </button></Link>
         <ArrowForwardIcon className='arrow-icon'style={{fontSize:"1.3rem"}} />
       </div>
     </div>

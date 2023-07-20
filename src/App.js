@@ -15,10 +15,19 @@ import Footer from "./Components/Footer/Footer";
 import Teams from "./Pages/Teams/Team";
 import Alumni from "./Pages/Alumni/Alumni";
 import AboutUs from './Pages/AboutUs/AboutUs';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  }
   return (
     <div className="App">
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />

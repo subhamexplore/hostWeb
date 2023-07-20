@@ -21,6 +21,7 @@ const Main = () => {
             description='We develop skills in multiple domains related to tech and design. Skills that will help you gain recognition in the industry and help you grow.'
             buttonText='Join us'
             buttonBackground='#1071FF'
+            buttonLink='/domains'
           />
           <img src={Home1} alt='' className='slide-1-img' />
         </div>
@@ -32,6 +33,7 @@ const Main = () => {
             description='A bunch of interesting and innovative projects, showing skills and expertise of members in their respective fields.'
             buttonText='Have a look'
             buttonBackground='#FF7610'
+            buttonLink='/projects'
           />
         </div>
         <div className='slide-1'>
@@ -41,6 +43,7 @@ const Main = () => {
             description='The shine and glory we achieved through the hardwork of our  talented and optimistic members.'
             buttonText='Have a Look'
             buttonBackground='#1071FF'
+            buttonLink='/achievements'
           />
           <div className='achieve_ellipse_images'>
             <img src={Achieve} alt='' className='slide-1-img' />
@@ -56,6 +59,7 @@ const Main = () => {
             description='Blogs , Articles , Books etc, curated by core members of zairza.'
             buttonText='Get More'
             buttonBackground='#FF7610'
+            buttonLink='/blogs'
           />
         </div>
         <div className='slide-4'>
@@ -81,6 +85,7 @@ const Main = () => {
             description='We develop skills in multiple domains related to tech and design. Skills that will help you gain recognition in the industry and help you grow.'
             buttonText='Visit team'
             buttonBackground='#1071FF'
+            buttonLink='/teams'
           />
           <img src={Girls} alt='' className='slide-1-img' />
         </div>

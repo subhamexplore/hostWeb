@@ -1,5 +1,7 @@
 .main {
+  overflow-x: hidden;
   .slide-1 {
+   
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -8,7 +10,15 @@
     height: 100vh;
   }
   .slide-1-img {
-    width: 50vw;
+    width:35vw;
+    animation-name: resize;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes resize {
+    0% {width: 35vw;}
+    50% {width: 38vw;}
+    100% {width: 35vw;}
   }
   .slide-2 {
     display: flex;
@@ -116,7 +126,15 @@
 @media screen and (max-width: 768px) {
   .main {
     .slide-1-img {
-      width: 80vw;
+      width:60vw;
+      animation-name: resize;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes resize {
+      0% {width: 60vw;}
+      50% {width: 63vw;}
+      100% {width: 60vw;}
     }
     .slide-2-img {
       width: 80vw;

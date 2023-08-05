@@ -26,14 +26,14 @@ const Navbar = () => {
         <Link to="/" onClick={close}><img src={Logo} alt="" className="logo" style={{width:"100px"}}/></Link>
       </div>
       <div className="navbar__right">
-        <h4 className="navbar__text">Sign In</h4>
+        <Link to='/login'><h4 className="navbar__text">Sign In</h4></Link>
         <MenuIcon className="navbar__menu" onClick={()=>{setShowNav(false);setAnimate(0)}}/>
       </div>
     </div>
     </div>
     </div>
       ):(
-    <div className="main_navbar" onClick={close}>
+    <div className="main_navbar">
       <div className="sub_nav">
       <div className="navbar">
       <div className="navbar__left">
@@ -53,7 +53,7 @@ const Navbar = () => {
       <Link to="/achievements" className="aboutUs-link" onClick={close}><div className="nav-button-content">Achievements</div></Link>
       <Link to="/domains" className="aboutUs-link" onClick={close}><div className="nav-button-content">Domains</div></Link>
       <Link to="/faq" className="aboutUs-link" onClick={close}><div className="nav-button-content">Faq</div></Link>
-      <div className="nav-button-content">Log In/Sign Up</div>
+      <Link to="/login" className="aboutUs-link" onClick={close}><div className="nav-button-content">Log In/Sign Up</div></Link>
       <div className="navbar-container_down">
         <div className="navbar-container__social_icons">
           <TwitterIcon className="navbar-container__icons" />

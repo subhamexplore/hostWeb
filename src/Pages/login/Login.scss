@@ -1,0 +1,131 @@
+.loginPage{
+    // height: 100vh;
+    padding:3rem 2rem 3rem 0;
+    background: orange;
+    display: flex;
+    .loginImage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+   .loginPart{
+    width: 50%;;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    .loginOr{
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 2rem;
+      color: rgb(136, 113, 113);
+    }
+    .loginContainer{
+      width: 30vw;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .loginIconContainer{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        gap:3rem;
+        .loginIcon{
+          height:4rem;
+        width:4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        color: blue;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .gh:hover{
+          color:black;
+          cursor: pointer;
+        }
+        .google:hover{
+          color:rgb(255, 30, 0);
+          cursor: pointer;
+        }
+      }
+      .noAccount{
+        display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      a{
+        text-decoration: none;
+        color: red;
+        font-weight: 500;
+      }
+      }
+    .signInHeader{
+      display: flex;
+      justify-content: center;
+      }
+      .submitBtn{
+        width:100%;
+        height:2.7rem;
+        font-size: 1.1rem;
+        border:none;
+        background:rgb(74, 74, 231);
+        border-radius: 11px;
+        color:white;
+      }
+    .loginInputContainer{
+      display: flex;
+      flex-direction: column;
+      margin:1rem 0rem;
+      .inputIcon{
+        position: relative;
+        left:90%;
+        bottom:2rem;
+        cursor: pointer;
+        width: fit-content;
+      }
+      .fPass{
+        text-align: right;
+      }
+      label{
+        font-size:1.1rem;
+      }
+      input{
+        border: none;
+        outline:none;
+        border-bottom: 2px solid blue;
+        height:2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+   }
+   @media(max-width:1100px){
+    .loginImage{
+      display: none;
+    }
+    .loginPart{
+      width: 100%;
+      .loginContainer{
+        width:60vw;
+      }
+    }
+   }
+   @media(max-width:540px){
+    .loginPart{
+      .loginContainer{
+        width:80vw;
+      }
+    }
+   }
+  }
+  @media(max-width:1100px){
+    .loginPage{
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  }

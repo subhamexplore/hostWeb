@@ -15,6 +15,8 @@ import Footer from "./Components/Footer/Footer";
 import Teams from "./Pages/Teams/Team";
 import Alumni from "./Pages/Alumni/Alumni";
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Login from './Pages/login/Login';
+import Signup from './Pages/login/Signup';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -45,6 +47,8 @@ function App() {
         <Route path="/alumni" element={<Alumni/>} />
 
         <Route path="/about" element={<AboutUs/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
       </Routes>
       <Footer />
     </div>
